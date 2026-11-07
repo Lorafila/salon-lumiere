@@ -1,0 +1,87 @@
+{
+  "brand": "Salon Lumière",
+  "site_url": "https://example.com/salon-demo",
+  "default_language": "de",
+  "languages": [
+    "de",
+    "en",
+    "ru"
+  ],
+  "language_meta": {
+    "de": {
+      "name": "Deutsch",
+      "og": "de_DE"
+    },
+    "en": {
+      "name": "English",
+      "og": "en_GB"
+    },
+    "ru": {
+      "name": "Русский",
+      "og": "ru_RU"
+    }
+  },
+  "phone": "+49 30 1234567",
+  "phone_href": "+49301234567",
+  "email": "info@salon-demo.example",
+  "street": "Beispielstraße 12",
+  "city": "12345 Musterstadt",
+  "hours": [
+    {
+      "key": "hours.mon_fri",
+      "time": "09:00–18:00"
+    },
+    {
+      "key": "hours.sat",
+      "time": "09:00–14:00"
+    },
+    {
+      "key": "hours.sun",
+      "time": null
+    }
+  ],
+  "services": [
+    {
+      "id": "cut",
+      "price": {
+        "amount": 35,
+        "from": true
+      }
+    },
+    {
+      "id": "color",
+      "price": {
+        "amount": 65,
+        "from": true
+      }
+    },
+    {
+      "id": "updo",
+      "price": {
+        "amount": 55,
+        "from": true
+      }
+    },
+    {
+      "id": "facial",
+      "price": {
+        "amount": 49,
+        "from": false
+      }
+    },
+    {
+      "id": "manicure",
+      "price": {
+        "amount": 29,
+        "from": false
+      }
+    },
+    {
+      "id": "brows",
+      "price": {
+        "amount": 25,
+        "from": true
+      }
+    }
+  ]
+}

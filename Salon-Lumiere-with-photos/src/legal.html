@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="{{@lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{legal.title}} – {{@brand}}</title>
+<meta name="description" content="{{legal.template}}">
+<meta name="theme-color" content="#0f0c0b">
+<link rel="canonical" href="{{@canonical}}">
+{{@hreflang}}
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%230f0c0b'/%3E%3Cpath d='M9 24V14a7 7 0 0 1 14 0v10z' fill='%23dcc08e'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+<div class="mesh" aria-hidden="true"><i></i><i></i><i></i></div>
+<a class="skip" href="#main">{{skip}}</a>
+<header class="site-header"><div class="wrap bar"><a class="brand" href="index.html">{{@brand}}</a>{{@switcher}}</div></header>
+<main id="main" class="wrap section legal">
+  <h1>{{legal.title}}</h1>
+  <p class="glass panel notice">{{legal.template}}</p>
+  <section id="imprint">
+    <h2>{{imp.title}}</h2>
+    <dl class="details">
+      <dt>{{imp.provider}}</dt><dd><address>{{@brand}}<br>{{@street}}<br>{{@city}}</address></dd>
+      <dt>{{imp.contact}}</dt><dd><a href="tel:{{@phone_href}}">{{@phone}}</a><br><a href="mailto:{{@email}}">{{@email}}</a></dd>
+      <dt>{{imp.vat}}</dt><dd>{{legal.todo}}</dd>
+    </dl>
+  </section>
+  <section id="privacy">
+    <h2>{{priv.title}}</h2>
+    <p>{{priv.p1}}</p><p>{{priv.p2}}</p><p>{{priv.p3}}</p><p>{{priv.p4}}</p>
+  </section>
+  <p><a href="index.html">{{legal.back}}</a></p>
+</main>
+<footer class="site-footer"><div class="wrap"><p>{{@brand}}</p></div></footer>
+</body>
+</html>
